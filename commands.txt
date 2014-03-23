@@ -1,0 +1,16 @@
+# Don't turn off screen for 30 minutes
+content update --uri content://settings/system --bind value:i:1800000 --where "name='screen_off_timeout'"
+# Stay on while plugged in (not sure if we need this)
+content update --uri content://settings/global --bind value:i:1 --where "name='stay_on_while_plugged_in'"
+# Disable lock screen
+content update --uri content://settings/secure --bind value:i:1 --where "name='lockscreen.disabled'"
+# Enable adb
+content update --uri content://settings/global --bind value:i:1 --where "name='adb_enabled'"
+# Allow use to install Non Market Apps
+content update --uri content://settings/global --bind value:i:1 --where "name='install_non_market_apps'"
+# Turn off the package verifier
+content update --uri content://settings/global --bind value:i:0 --where "name='package_verifier_enable'"
+
+
+
+
