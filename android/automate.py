@@ -61,6 +61,6 @@ for line in auto_click_file:
     write_command_and_wait(ser, "echo '{}' >> {}".format(line.replace("'", "'\\''"), auto_click_name), 5)
 
 write_command_and_wait(ser, "bash {} &".format(auto_click_name), 5)
-io.stdout.write("\n\n")
+sys.stdout.write("\n\n")
 
 print "Congrats!! We are now ready for you to plug in your device for adb"
