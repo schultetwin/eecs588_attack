@@ -10,6 +10,6 @@ while [ 1 ]; do
                 echo -n "Found\n" >> tmp1.txt
         fi
         rm tmp.txt
-        sleep 0.1
+        sleep 1
 done
 
